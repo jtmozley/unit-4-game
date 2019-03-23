@@ -1,0 +1,21 @@
+body {
+    background-image: url(../images/photo-1517405030045-45f7ad942106.png);
+    background-position: center;
+}
+
+h1 {
+    color: #dee2e6;
+}
+.crystal-image {
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+  }
+
+  .jumbotron {
+      margin-top: 30px;
+      background-color: rgba(69, 82, 95, 0.8);
+  }
+  .img-thumbnail {
+    background-color: rgba(69, 82, 95, 0.0);
+  }
