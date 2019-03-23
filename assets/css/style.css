@@ -4,7 +4,7 @@ body {
 }
 
 h1 {
-    color: #dee2e6;
+    color: #daebfc;
 }
 .crystal-image {
     width: 250px;
@@ -18,4 +18,9 @@ h1 {
   }
   .img-thumbnail {
     background-color: rgba(69, 82, 95, 0.0);
+  }
+
+  #wins, #losses {
+    color: #daebfc;
+    font-size: 2rem;
   }

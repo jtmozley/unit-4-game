@@ -2,7 +2,13 @@ var targetNumber = 53;
 
   $("#number-to-guess").text(targetNumber);
 
+  //user counters
   var counter = 0;
+  var wins = 0;
+  var losses = 0;
+
+  var winsText = $("#wins").append("Wins: " + wins);
+  var winsText = $("#losses").append("Losses: " + losses);
 
   // Now for the hard part. Creating multiple crystals each with their own unique number value.
 
