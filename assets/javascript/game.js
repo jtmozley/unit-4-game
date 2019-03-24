@@ -7,8 +7,8 @@ var wins = 0;
 var losses = 0;
 
 //variables for updating wins/losses on the page
-var winsText = $("#wins").append("Wins: " + wins);
-var loseText = $("#losses").append("Losses: " + losses);
+var winsText = $("#wins");
+var loseText = $("#losses");
 
 //numbers for assignment to the crystals
 var numberOptions = [10, 5, 3, 7];
@@ -38,10 +38,12 @@ $(".crystal-image").on("click", function() {
 
   if (counter === targetNumber) {
     alert("You win!");
+    wins++;
     reset();
     rNumberPrint();
   } else if (counter >= targetNumber) {
     alert("You lose!!");
+    losses++;
     reset();
     rNumberPrint();
   }
@@ -50,11 +52,13 @@ $(".crystal-image").on("click", function() {
 function rNumberPrint() {
   targetNumber = Math.floor(Math.random() * 101) + 19;
   $("#number-to-guess").text(targetNumber);
+  winsText.text("Wins: " + wins);
+  loseText.text("Losses: " + losses);
 };
 
 function reset() {
-  winsText;
-  loseText;
+  winsText.text("Wins: " + wins);
+  loseText.text("Losses: " + losses);
   counter = 0;
   targetNumber;
   //place for code to randomize crystal values
