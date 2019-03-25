@@ -11,17 +11,17 @@ var winsText = $("#wins");
 var loseText = $("#losses");
 
 //numbers for assignment to the crystals
-var numberOptions = [10, 5, 3, 7];
+//var numberOptions = [10, 5, 3, 7];
 
 //for loop creates crystals for page
-for (var i = 0; i < numberOptions.length; i++) {
+for (var i = 0; i < 4; i++) {
   var imageCrystal = $("<img>");
   imageCrystal.addClass("crystal-image");
   imageCrystal.attr(
     "src",
     "http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg"
   );
-  imageCrystal.attr("data-crystalvalue", numberOptions[i]);
+  imageCrystal.attr("data-crystalvalue", Math.floor(Math.random() * 12) + 1);
   $("#crystals").append(imageCrystal);
 }
 
